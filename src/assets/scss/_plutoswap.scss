@@ -1,0 +1,82 @@
+@import "_colors";
+
+
+.pluto_swap_section {
+    padding: 120px 0px;
+    background-color: $maincolor;
+}
+
+.pluto_swap_text {
+    h2 {
+        color: $lightitems;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $lightitems;
+     }
+    }
+
+
+.pluto_para {
+    text-align: start;
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $lightitems;
+    }
+}
+
+.exchange_img_wrapper {
+
+    max-width: 500px;
+    margin-left: auto;
+
+    .img_overlay {
+        background-color: #16003B;
+        opacity: 0.35;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+
+    &:hover {
+        .img_overlay {
+            width: 0%;
+            height: 0%;
+            opacity: 0;
+        }
+    }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+    .exchange_img_wrapper {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .pluto_swap_section {
+        padding: 70px 0px;
+    }
+    
+    .pluto_swap_text {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+         }
+    }
+
+    .pluto_para {
+        p {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "_colors";
+
+.btn_copy_outter {
+    background-color: $secondarycolor;
+    position: relative;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    .text_to_copy {
+        color: $maincolor;
+        font-size: 14px;
+    }
+}
+.copybtn {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    .copybtn_icon {
+        font-size: 18px;
+        color: $maincolor;
+       
+    }
+}
+
+.left_copied {
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $maincolor;
+    background-color: $secondarycolor;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+
+    &:before{
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border-right: 0.2em solid $secondarycolor;
+        border-top: 0.2em solid $secondarycolor;
+        background-color: $secondarycolor;
+        margin-right: 0.5em;
+        z-index: -1;
+        }
+
+}

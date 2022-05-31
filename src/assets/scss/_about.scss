@@ -1,0 +1,84 @@
+@import "_colors";
+
+.about_section {
+    background-color: $maincolor;
+    padding: 120px 0px;
+}
+
+.main_about_heading {
+
+    h2 {
+        color: $lightitems;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $lightitems;
+    }
+
+} 
+
+.list_reflections {
+    margin-top: 40px;
+    ul {
+        list-style: decimal;
+        li {
+            &::marker {
+                font-size: 25px;
+                color: $lightitems;
+            }
+            .single_reflection {
+                h2 {
+                    color: $lightitems;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $lightitems;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .about_section {
+        padding: 70px 0px;
+    }
+    .main_about_heading {
+
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+    } 
+    .list_reflections {
+        ul {
+            li {
+                &::marker {
+                    font-size: 22px;
+                }
+                .single_reflection {
+                    h2 {
+                        font-size: 16px;
+
+                    }
+                    p {
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+

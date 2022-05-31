@@ -1,0 +1,115 @@
+@import "_colors";
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: $maincolor;
+}
+.nav_fullscreen {
+    .nav_collapse.navbar-collapse {
+        position: fixed;
+        z-index: -1;
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+        right: 0px;
+        top: 0px;
+        transition: 250ms all ease-in;
+    }
+    .nav_collapse.navbar-collapse.show {
+        position: fixed;
+        visibility: visible;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $maincolor;
+        z-index: 10;
+        transition: 250ms all ease-in;
+
+        .close_nav_fullscreen {
+            position: fixed;
+            visibility: visible;
+            top: 20px;
+            right: 20px;
+            z-index: 11;
+        }
+    }
+}
+.navbar-brand {
+    font-size: 32px;
+    color: $lightitems;
+    font-weight: 700;
+    transition: 250ms all ease-in;
+
+    &:hover {
+        color: $secondarycolor;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $lightitems;
+        font-weight: 400;
+        font-size: 18px;
+        transition: 250ms all ease-in;
+        &:hover {
+            color: $secondarycolor;
+        }
+        }
+    .nav-link.active {
+        color: $secondarycolor;
+        }
+    
+}
+
+.hamburger_menu {
+    color: $lightitems;
+    font-size: 28px;
+    outline: 0;
+}
+
+.close_nav_fullscreen {
+    background: transparent;
+    color: $lightitems;
+    font-size: 30px;
+    border: 0;
+}
+.navbar-toggler {
+    box-shadow: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
+
+
+@media(max-width: 767px) {
+    .navbar-brand {
+        font-size: 22px;
+        color: $lightitems;
+        margin-right: 0.5rem;
+    }
+    .navbar-toggler {
+        padding: 5px;
+    }
+    .btn_copy_outter {
+        padding: 4px 8px;
+        .text_to_copy {
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+         }
+    }
+
+}

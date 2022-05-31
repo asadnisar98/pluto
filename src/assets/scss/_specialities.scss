@@ -1,0 +1,57 @@
+@import "_colors";
+.specialities_section {
+    background-color: $secondarycolor;
+    padding: 120px 0;
+}
+
+.speci_single {
+    .icon_speci {
+        font-size: 70px;
+        color: $maincolor;
+    }
+    h2 {
+        font-size: 25px;
+        color: $maincolor;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        color: $maincolor;
+        font-weight: 400;
+    }
+}
+
+.section_main_heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: $maincolor;
+}
+
+
+@media(max-width: 767px) {
+    .specialities_section {
+        padding: 70px 0;
+    }
+    .section_main_heading {
+        font-size: 24px;
+    }
+    
+    .speci_single {
+        max-width: 300px;
+        margin: 0 auto;
+        .icon_speci {
+            font-size: 40px;
+            color: $maincolor;
+        }
+        h2 {
+            font-size: 18px;
+            color: $maincolor;
+            font-weight: 600;
+        }
+        p {
+            font-size: 14px;
+            color: $maincolor;
+            font-weight: 400;
+        }
+    }
+}

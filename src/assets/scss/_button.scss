@@ -1,0 +1,39 @@
+@import "_colors";
+@mixin plutobtn {
+    max-width: 120px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+.button_box {
+    max-width: 120px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: $lightitems;
+    color: $lightitems;
+    transition: 250ms all linear;
+
+
+    &:hover {
+        background-color: $secondarycolor;
+        color: $maincolor;
+        border-color: $secondarycolor;
+    }
+}

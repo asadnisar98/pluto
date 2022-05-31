@@ -1,0 +1,73 @@
+@import "_colors";
+
+.aboutus_section {
+    background-color: $secondarycolor;
+    padding: 120px 0px;
+}
+
+
+
+.main_aboutus_heading {
+
+    h2 {
+        color: $maincolor;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $maincolor;
+    }
+
+} 
+
+.aboutus_para {
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $maincolor;
+    }
+}
+
+
+.stagger-visualizer div {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid $maincolor;
+    background-color: $maincolor;
+  }
+  .stagger-visualizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 8.5rem;
+    height: 100%;
+  }
+
+
+
+
+  @media(max-width:767px) {
+    .aboutus_section {
+        padding: 70px 0px;
+    }
+    .main_aboutus_heading {
+
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+    
+    } 
+    
+    .aboutus_para {
+        p {
+            font-size: 16px;
+        }
+    }
+    
+  }

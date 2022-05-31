@@ -1,0 +1,67 @@
+@import "_colors";
+@import "_button";
+
+footer {
+    padding: 170px 0px 20px 0px;
+    background-color: $secondarycolor;
+}
+
+.box_footer {
+    background-color: $maincolor;
+    padding: 25px 45px;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .content_box {
+        h2 {
+            color: $lightitems;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p {
+            color: $lightitems;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+.disclaimer_footer {
+    font-size: 18px;
+    font-weight: 600;
+    color: $maincolor;
+    margin-top: 20px;
+}
+
+
+
+
+@media(max-width:767px) {
+    footer {
+        padding: 120px 0px 20px 0px;
+        background-color: $secondarycolor;
+    }
+    .box_footer {
+        padding: 20px 25px;
+        border-radius: 10px;
+        min-height: 250px;
+    
+        .content_box {
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .disclaimer_footer {
+        font-size: 14px;
+    }
+    
+}
