@@ -143,8 +143,8 @@ function Main() {
               <main>
                 <canvas id="space_box"></canvas>
                 <div className="name_outter">
-                    <h2 className="main_heading">PlutoMaker</h2>
-                    <h2 className="sub_heading">Marketplace of the Future!</h2>
+                    <h2 className="main_heading">Pluto</h2>
+                    <h2 className="sub_heading">Currency of the Future!</h2>
                 </div>
              </main>
         </div>
