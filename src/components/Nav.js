@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiFillCloseCircle, AiOutlineMenu } from 'react-icons/ai';
 import Copyclipboard from './Copyclipboard';
+import Logo from '../assets/images/pluto_logo.png'
 
 function Nav() {
  const [isShow, setIsShow] = useState(true);
@@ -21,7 +22,7 @@ function Nav() {
         <div>
                     <nav className="navbar nav_fullscreen">
                         <div className="container">
-                            <a className="navbar-brand" href="/">PlutoMaker</a>
+                            <a className="navbar-brand" href="/"><img className="w-100" src={Logo} alt="logo" /></a>
 
                         <div className="d-flex">
                             <Copyclipboard />

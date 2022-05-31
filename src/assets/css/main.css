@@ -170,6 +170,10 @@ main .sub_heading {
   color: #E9D5CA;
 }
 
+.navbar-brand {
+  max-width: 200px;
+}
+
 .navbar-nav .nav-link {
   color: #FFF;
   font-weight: 400;
@@ -209,11 +213,20 @@ main .sub_heading {
           box-shadow: none;
 }
 
+@media (min-width: 767px) and (max-width: 1200px) {
+  .navbar-brand {
+    max-width: 150px;
+  }
+}
+
 @media (max-width: 767px) {
   .navbar-brand {
     font-size: 22px;
     color: #FFF;
     margin-right: 0.5rem;
+  }
+  .navbar-brand {
+    max-width: 120px;
   }
   .navbar-toggler {
     padding: 5px;

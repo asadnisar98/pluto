@@ -52,6 +52,9 @@
         color: $secondarycolor;
     }
 }
+.navbar-brand {
+    max-width: 200px;
+}
 
 .navbar-nav {
     .nav-link {
@@ -90,7 +93,12 @@
 }
 
 
-
+@media (min-width: 767px) and (max-width: 1200px) {
+    .navbar-brand {
+        max-width: 150px;
+    }
+    
+}
 
 @media(max-width: 767px) {
     .navbar-brand {
@@ -98,6 +106,10 @@
         color: $lightitems;
         margin-right: 0.5rem;
     }
+    .navbar-brand {
+        max-width: 120px;
+    }
+    
     .navbar-toggler {
         padding: 5px;
     }
